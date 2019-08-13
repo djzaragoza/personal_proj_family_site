@@ -68,21 +68,28 @@ h1, h2, h3, h4, h5 {
 
 /* Navigation styling */
 
+body {
+    width: 100%;
+    background-color: black;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li a {
+a {
+    font-size: 20px;
     display: block;
     width: 60px;
-    background-color: #dddddd;
+    background-color: lightgrey;
+    text-decoration: none;
 }
 
-li a:hover {
+a:hover {
     text-decoration: none;
     transition: 2.5s;
-    color: darkgrey;
+    color: crimson;
 }
 
