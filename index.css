@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5 {
 /* Navigation styling */
 
 body {
+    margin: 0;
     width: 100%;
     background-color: black;
 }
@@ -77,19 +78,27 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin-left: 20px;
+    margin-top: 20px; 
 }
 
 a {
     font-size: 20px;
     display: block;
-    width: 60px;
-    background-color: lightgrey;
+    width: 60%;
+    color: white;
+    background-color: black;
     text-decoration: none;
+    text-align: center;
+
 }
 
 a:hover {
     text-decoration: none;
-    transition: 2.5s;
-    color: crimson;
+    transition: .5s;
+    color: dodgerblue;
 }
 
