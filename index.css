@@ -127,7 +127,7 @@ ul {
 }
 
 a {
-    font-size: 18px;
+    font-size: 15px;
     display: block;
     width: 60%;
     color: white;
@@ -163,5 +163,14 @@ a:hover {
 
 .family {
     display: flex;
+}
+
+.quote {
+    font-size: 55px;
+    color: white;
+}
+
+.quote p {
+    color: white;
 }
 
