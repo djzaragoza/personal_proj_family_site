@@ -74,6 +74,47 @@ body {
     background-color: black;
 }
 
+.top-header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.p1 {
+    font-size: 85px;
+    text-align: center;
+    font-weight: 600;
+    color: lime;  
+    margin-top: 45px;
+    margin-left: 50px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.p2 {
+    font-size: 85px;
+    text-align: center;
+    font-weight: 600;
+    color: yellow;  
+    margin-top: 45px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.p3 {
+    font-size: 85px;
+    text-align: center;
+    font-weight: 600;
+    color: crimson;  
+    margin-top: 45px;
+    margin-right: 45px;
+    font-family: 'Indie Flower', cursive;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-left: 25px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -99,6 +140,25 @@ a {
 a:hover {
     text-decoration: none;
     transition: .5s;
-    color: dodgerblue;
+    color: rgb(125, 132, 231);
+}
+
+/* body styling */
+
+.intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    margin-right: 45px;
+    margin-top: 34px;
+}
+
+.intro p {
+    width: 35%;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Ma Shan Zheng';
+
 }
 
