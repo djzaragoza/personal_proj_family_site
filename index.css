@@ -127,7 +127,7 @@ ul {
 }
 
 a {
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     width: 60%;
     color: white;
@@ -154,11 +154,14 @@ a:hover {
 }
 
 .intro p {
-    width: 35%;
+    width: 60%;
     font-size: 20px;
     line-height: 1.5;
     color: white;
     font-family: 'Ma Shan Zheng';
+}
 
+.family {
+    display: flex;
 }
 
