@@ -138,7 +138,7 @@ a {
 a:hover {
     text-decoration: none;
     transition: .5s;
-    color: rgb(125, 132, 231);
+    color: lightgrey;
 }
 
 /* body styling */
