@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
 /* Navigation styling */
 
 body {
-    margin: 0;
     width: 100%;
     background-color: black;
 }
@@ -77,7 +76,6 @@ body {
 .top-header {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
 }
 
 .p1 {
@@ -127,7 +125,7 @@ ul {
 }
 
 a {
-    font-size: 20px;
+    font-size: 15px;
     display: block;
     width: 60%;
     color: white;
@@ -154,11 +152,44 @@ a:hover {
 }
 
 .intro p {
-    width: 35%;
+    width: 60%;
     font-size: 20px;
     line-height: 1.5;
     color: white;
     font-family: 'Ma Shan Zheng';
-
 }
+
+.family {
+    display: flex;
+}
+
+.quote {
+    display: flex;
+    font-size: 65px;
+    color: lemonchiffon;
+    text-align: center; 
+    font-family: 'Acme', sans-serif; 
+}
+
+.quote-content {
+    color: white;
+    font-family: 'Blinker', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 35%;
+}
+
+.quote-content p {
+    margin-top: 12px;
+    margin-left: 50px;
+    width: 100%;
+    padding: 2%;
+}
+
+.quote-main {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
 
