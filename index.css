@@ -193,7 +193,8 @@ a:hover {
 }
 
 .middle-content {
-    background-color: seashell;
+    background: url(https://images.unsplash.com/photo-1512349879355-7cfe4845a13b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-repeat: no-repeat;
     width: 35%;
     float: right;
     margin-right: 30px;
@@ -201,12 +202,13 @@ a:hover {
 }
 
 .middle-content h1 {
-    color: black;
+    color: white;
     font-size: 36px;
+    font-weight: 600;
 }
 
 .middle-content p {
-    color: black;
+    color: lightgrey;
     font-size: 18px;
     line-height: 1.4;
 }
