@@ -77,6 +77,10 @@ body {
     justify-content: center;
 }
 
+.top-nav {
+    background-color: black;
+}
+
 .p1 {
     font-size: 85px;
     text-align: center;
@@ -126,15 +130,15 @@ ul {
 a {
     font-size: 13px;
     display: inline;
-    color: black;
+    color: white;
     text-decoration: none;
     text-align: center;
 }
 
 a:hover {
     transition: .1s;
-    color: black;
-    font-weight: 600;
+    color: lightgrey;
+    font-weight: 400;
 }
 
 /* body styling */
