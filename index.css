@@ -86,7 +86,7 @@ body {
     text-align: center;
     font-weight: 600;
     color: rgb(84, 228, 84);  
-    margin-top: 45px;
+    margin-top: 5px;
     margin-left: 50px;
     font-family: 'Indie Flower', cursive;
 }
@@ -96,7 +96,8 @@ body {
     text-align: center;
     font-weight: 600;
     color: rgb(111, 167, 250);  
-    margin-top: 45px;
+    margin-left: 8px;
+    margin-top: 65px;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -105,7 +106,7 @@ body {
     text-align: center;
     font-weight: 600;
     color: crimson;  
-    margin-top: 45px;
+    margin-top: 5px;
     margin-right: 45px;
     font-family: 'Indie Flower', cursive;
 }
@@ -137,7 +138,7 @@ a {
 
 a:hover {
     transition: .1s;
-    color: lightgrey;
+    color: rgb(111, 167, 250);
     font-weight: 400;
 }
 
@@ -145,7 +146,7 @@ a:hover {
 
 .intro {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     align-content: center;
     margin-right: 45px;
     margin-top: 34px;
@@ -153,14 +154,19 @@ a:hover {
 
 .intro p {
     width: 60%;
-    font-size: 20px;
-    line-height: 1.5;
-    color: darkgrey;
-    font-family: 'Ma Shan Zheng';
+    font-size: 15px;
+    line-height: 1.4;
+    color: black;
+}
+
+.top-content {
+    background-color: rgb(207, 204, 204);
 }
 
 .family {
     display: flex;
+    margin-top: 5px;
+    padding: 15px;
 }
 
 .quote {
@@ -190,14 +196,15 @@ a:hover {
     display: flex;
     align-content: center;
     text-align: center;
+    margin-left: 250px;
 }
 
 .middle-content {
     background: url();
     background-repeat: no-repeat;
     width: 35%;
-    float: right;
-    margin-right: 30px;
+    float: left;
+    margin-left: 30px;
     margin-top: 30px;
 }
 
