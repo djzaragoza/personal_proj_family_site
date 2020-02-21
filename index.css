@@ -82,7 +82,7 @@ body {
     font-size: 85px;
     text-align: center;
     font-weight: 600;
-    color: lime;  
+    color: rgb(84, 228, 84);  
     margin-top: 45px;
     margin-left: 50px;
     font-family: 'Indie Flower', cursive;
@@ -92,7 +92,7 @@ body {
     font-size: 85px;
     text-align: center;
     font-weight: 600;
-    color: yellow;  
+    color: rgb(111, 167, 250);  
     margin-top: 45px;
     font-family: 'Indie Flower', cursive;
 }
@@ -138,7 +138,7 @@ a {
 a:hover {
     text-decoration: none;
     transition: .5s;
-    color: rgb(125, 132, 231);
+    color: lightgrey;
 }
 
 /* body styling */
@@ -192,4 +192,23 @@ a:hover {
     text-align: center;
 }
 
+.middle-content {
+    background: url(https://images.unsplash.com/photo-1512349879355-7cfe4845a13b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-repeat: no-repeat;
+    width: 35%;
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
 
+.middle-content h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.middle-content p {
+    color: lightgrey;
+    font-size: 18px;
+    line-height: 1.4;
+}
