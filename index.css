@@ -82,7 +82,7 @@ body {
     font-size: 85px;
     text-align: center;
     font-weight: 600;
-    color: lime;  
+    color: rgb(84, 228, 84);  
     margin-top: 45px;
     margin-left: 50px;
     font-family: 'Indie Flower', cursive;
@@ -92,7 +92,7 @@ body {
     font-size: 85px;
     text-align: center;
     font-weight: 600;
-    color: yellow;  
+    color: rgb(111, 167, 250);  
     margin-top: 45px;
     font-family: 'Indie Flower', cursive;
 }
