@@ -161,6 +161,7 @@ a:hover {
 }
 
 .top-content {
+    width: 100%;
     background-color: rgb(189, 210, 230);
     display: flex;
     flex-direction: row;
