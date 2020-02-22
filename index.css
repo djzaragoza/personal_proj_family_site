@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 /* Navigation styling */
 
 body {
-    width: 100%;
+    max-width: 100%;
 }
 
 .top-header {
@@ -111,11 +111,69 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
-img {
+.top-content .dj {
+    position: relative;
     border-radius: 12%;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 70px;
+    margin-left: 70px;   
+}
+
+.top-content .dj-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.top-content .dj:hover .dj-overlay {
+    opacity: 1;
+}
+
+.dj-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.krystel {
+    border-radius: 12%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;   
+}
+
+.bea {
+    border-radius: 12%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;   
+}
+
+.eizac {
+    border-radius: 12%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;   
+}
+
+.enzo {
+    border-radius: 12%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;   
 }
 
 ul {
@@ -144,21 +202,6 @@ a:hover {
 }
 
 /* body styling */
-
-.intro {
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-    margin-right: 45px;
-    margin-top: 34px;
-}
-
-.intro p {
-    width: 60%;
-    font-size: 15px;
-    line-height: 1.4;
-    color: black;
-}
 
 .top-content {
     width: 100%;
@@ -223,8 +266,24 @@ a:hover {
 .middle-content p {
     width: 80%;
     color: black;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 1.6;
     margin-left: 40px;
+}
+
+/* social media icons */
+.fa-facebook {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: .6;
 }
