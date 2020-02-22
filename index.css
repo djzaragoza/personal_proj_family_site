@@ -69,16 +69,19 @@ h1, h2, h3, h4, h5 {
 /* Navigation styling */
 
 body {
-    max-width: 100%;
+    width: 100%;
 }
 
 .top-header {
     display: flex;
     justify-content: center;
+    width: 100%;
+
 }
 
 .top-nav {
     background-color: black;
+    width: 100%;
 }
 
 .p1 {
@@ -120,17 +123,11 @@ img {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
     margin-left: 20px;
-    margin-top: 20px; 
 }
 
 a {
-    font-size: 13px;
+    font-size: 14px;
     display: inline;
     color: white;
     text-decoration: none;
@@ -192,14 +189,14 @@ a:hover {
     width: 45%;
     height: 55%;
     float: left;
-    margin-left: 125px;
-    margin-top: 30px;
+    margin-left: 100px;
+    margin-top: 70px;
     border-radius: 25px;
 }
 
 .middle-content h1 {
     color: black;
-    margin-left: 10px;
+    margin-left: 19px;
     margin-top: 5px;
     font-size: 26px;
     font-weight: 600;
@@ -211,7 +208,17 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.6;
-    margin-left: 40px;
+    margin-left: 52px;
+}
+
+.middle-content p2 {
+    display: inline-flex;
+    flex-direction: row;
+    text-align-last: right;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 
 /* social media icons */
@@ -233,13 +240,14 @@ a:hover {
 /* TIMELINE STYLING */
 
 .timeline {
-    background-color: #474e5d;
+    background-color: darkgrey;
     font-family: Helvetica, sans-serif;
     position: relative;
     max-width: 750px;
     margin: 0 auto;
     margin-right: 100px;
-    margin-top: 30px;
+    margin-top: 70px;
+    border-radius: 15%;
 }
 
 .timeline::after {
@@ -267,7 +275,7 @@ a:hover {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid rgb(84, 228, 84);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -317,7 +325,7 @@ a:hover {
     border-radius: 6px;
 }
 
-/* timeline media queries */
+/* timeline media queries TABLET MODE */
 
 @media screen and (max-width: 600px) {
     .timeline::after {
@@ -347,5 +355,5 @@ a:hover {
 }
 
 
-
-
+/* #474e5d */
+/* #FF9F55 */
