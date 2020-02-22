@@ -192,7 +192,7 @@ a:hover {
     width: 45%;
     height: 55%;
     float: left;
-    margin-left: 30px;
+    margin-left: 125px;
     margin-top: 30px;
     border-radius: 25px;
 }
@@ -236,8 +236,10 @@ a:hover {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
     position: relative;
-    max-width: 1200px;
+    max-width: 750px;
     margin: 0 auto;
+    margin-right: 100px;
+    margin-top: 30px;
 }
 
 .timeline::after {
@@ -291,4 +293,59 @@ a:hover {
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
 }
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* timeline media queries */
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    
+    .left::after, .right::after {
+        left: 15px;
+    }
+    
+    .right {
+        left: 0%;
+    }
+    
+}
+
+
+
 
