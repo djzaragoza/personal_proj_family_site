@@ -112,9 +112,10 @@ body {
 }
 
 img {
-    border-radius: 50%;
-    margin-top: 80px;
-    margin-left: 25px;
+    border-radius: 12%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 48px;
 }
 
 ul {
