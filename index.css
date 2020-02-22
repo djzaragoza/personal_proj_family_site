@@ -111,65 +111,7 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
-.top-content .dj {
-    position: relative;
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.top-content .dj-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.top-content .dj:hover .dj-overlay {
-    opacity: 1;
-}
-
-.dj-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.krystel {
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.bea {
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.eizac {
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.enzo {
+img {
     border-radius: 12%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -197,7 +139,7 @@ a {
 
 a:hover {
     transition: .1s;
-    color: rgb(111, 167, 250);
+    color: #3B5998;
     font-weight: 400;
 }
 
