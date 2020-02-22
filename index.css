@@ -69,16 +69,19 @@ h1, h2, h3, h4, h5 {
 /* Navigation styling */
 
 body {
-    max-width: 100%;
+    width: 100%;
 }
 
 .top-header {
     display: flex;
     justify-content: center;
+    width: 100%;
+
 }
 
 .top-nav {
     background-color: black;
+    width: 100%;
 }
 
 .p1 {
@@ -111,65 +114,7 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
-.top-content .dj {
-    position: relative;
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.top-content .dj-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.top-content .dj:hover .dj-overlay {
-    opacity: 1;
-}
-
-.dj-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.krystel {
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.bea {
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.eizac {
-    border-radius: 12%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;   
-}
-
-.enzo {
+img {
     border-radius: 12%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -178,17 +123,11 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
     margin-left: 20px;
-    margin-top: 20px; 
 }
 
 a {
-    font-size: 13px;
+    font-size: 14px;
     display: inline;
     color: white;
     text-decoration: none;
@@ -197,7 +136,7 @@ a {
 
 a:hover {
     transition: .1s;
-    color: rgb(111, 167, 250);
+    color: #3B5998;
     font-weight: 400;
 }
 
@@ -250,14 +189,14 @@ a:hover {
     width: 45%;
     height: 55%;
     float: left;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 100px;
+    margin-top: 70px;
     border-radius: 25px;
 }
 
 .middle-content h1 {
     color: black;
-    margin-left: 10px;
+    margin-left: 19px;
     margin-top: 5px;
     font-size: 26px;
     font-weight: 600;
@@ -269,7 +208,17 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.6;
-    margin-left: 40px;
+    margin-left: 52px;
+}
+
+.middle-content p2 {
+    display: inline-flex;
+    flex-direction: row;
+    text-align-last: right;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 
 /* social media icons */
@@ -287,3 +236,124 @@ a:hover {
 .fa:hover {
     opacity: .6;
 }
+
+/* TIMELINE STYLING */
+
+.timeline {
+    background-color: darkgrey;
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-right: 100px;
+    margin-top: 70px;
+    border-radius: 15%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid rgb(84, 228, 84);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* timeline media queries TABLET MODE */
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    
+    .left::after, .right::after {
+        left: 15px;
+    }
+    
+    .right {
+        left: 0%;
+    }
+    
+}
+
+
+/* #474e5d */
+/* #FF9F55 */
