@@ -160,6 +160,7 @@ a:hover {
     color: darkgrey;
     text-align: center; 
     font-family: 'Acme', sans-serif; 
+    margin-top: 20px;
 }
 
 .quote-content {
