@@ -19,18 +19,85 @@
 
 <body>
 
- 
+    <div class="slideshow-container">
 
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="assets\images\2019_snow_day_katalina_bday.jpg" style="width: 100%">
+        <div class="text">Snow day! Katalina's birthday</div>
+    </div>
 
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="assets\images\2019_snow_day_katalina_bday.jpg" style="width: 100%">
+        <div class="text">Group pic!  Beautiful weather!</div>
+    </div>
 
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="assets\images\2019_krystel_snow_day_katalina_bday.jpg" style="width: 100%">
+        <div class="text">Always cheesin!</div>
+    </div>
 
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="assets\images\2019_family_snow_day_katalina_bday.jpg" style="width: 100%">
+        <div class="text">My beautiful and happy family!</div>
+    </div>
 
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="assets\images\2019_eizac_snow_day_katalina_bday.jpg" style="width: 100%">
+        <div class="text">Eizac enjoying himself!</div>
+    </div>
 
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="assets\images\2019_bea_snow_day_katalina_bday.jpg" style="width: 100%">
+        <div class="text">Bea too!</div>
+    </div>
 
+    <a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onClick="plusSlides(1)">&#10095;></a>
+</div>
+<br>
 
+<div style="text-align: center">
+    <span class="dot" onClick="currentSlide(1)"></span>
+    <span class="dot" onClick="currentSlide(2)"></span>
+    <span class="dot" onClick="currentSlide(3)"></span>
+    <span class="dot" onClick="currentSlide(4)"></span>
+    <span class="dot" onClick="currentSlide(5)"></span>
+</div>
 
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
 
 </body>
 
