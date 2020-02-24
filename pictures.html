@@ -24,37 +24,37 @@
 
     <div class="mySlides fade">
         <div class="numbertext">1 / 5</div>
-        <img src="assets\images\2019_Christmas_family.jpg" style="width: 50%">
-        <div class="text" style="color: black">Snow day! Katalina's birthday</div>
+        <img src="assets\images\2019_Christmas_family.jpg" style="width: 85%">
+        <div class="text" style="color: white">Christmas 2019 - The Zaragoza's</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">1 / 5</div>
-        <img src="assets\images\2019_snow_day_katalina_bday.jpg" style="width: 50%">
+        <img src="assets\images\2019_snow_day_katalina_bday.jpg" style="width: 85%">
         <div class="text" style="color: white">Group pic!  Beautiful weather!</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">2 / 5</div>
-        <img src="assets\images\2019_krystel_snow_day_katalina_bday.jpg" style="width: 50%">
+        <img src="assets\images\2019_krystel_snow_day_katalina_bday.jpg" style="width: 85%">
         <div class="text" style="color: yellow">Always cheesin!</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 5</div>
-        <img src="assets\images\2019_family_snow_day_katalina_bday.jpg" style="width: 50%">
+        <img src="assets\images\2019_family_snow_day_katalina_bday.jpg" style="width: 85%">
         <div class="text" style="color: yellow">My beautiful and happy family!</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 5</div>
-        <img src="assets\images\2019_eizac_snow_day_katalina_bday.jpg" style="width: 50%">
+        <img src="assets\images\2019_eizac_snow_day_katalina_bday.jpg" style="width: 85%">
         <div class="text" style="color: yellow">Eizac enjoying himself!</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">5 / 5</div>
-        <img src="assets\images\2019_bea_snow_day_katalina_bday.jpg" style="width: 50%">
+        <img src="assets\images\2019_bea_snow_day_katalina_bday.jpg" style="width: 85%">
         <div class="text" style="color: yellow">Bea too!</div>
     </div>
 
@@ -84,12 +84,13 @@
     }
 
     function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
+        const i;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
+        for (i = 0; i < slides.length; i++) { 
+            // for loop thru the slides
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
