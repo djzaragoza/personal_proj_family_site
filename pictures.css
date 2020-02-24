@@ -83,11 +83,11 @@ img {vertical-align: middle;}
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 87%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: crimson;
     font-weight: bold;
     font-size: 18px;
     transition: .6s ease;
