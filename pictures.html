@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Blinker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pictures.css" media="all" />
+    <link rel="stylesheet" href="pictures.html" media="all" />
+    <link rel="stylesheet" href="index.css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Indie+Flower|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>The Zaragoza's</title>
+
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 of 5</div>
+        <img src="assets\images\2019_Christmas_family.jpg" style="width: 65%">
+        <div class="text" style="color: white">Christmas 2019 - The Zaragoza's</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 of 5</div>
+        <img src="assets\images\2019_snow_day_katalina_bday.jpg" style="width: 65%">
+        <div class="text" style="color: black">Group pic!  Beautiful weather!</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 of 5</div>
+        <img src="assets\images\2019_krystel_snow_day_katalina_bday.jpg" style="width: 65%">
+        <div class="text" style="color: yellow">Always cheesin!</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 of 5</div>
+        <img src="assets\images\2019_family_snow_day_katalina_bday.jpg" style="width: 65%">
+        <div class="text" style="color: yellow">My beautiful family</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 of 5</div>
+        <img src="assets\images\2019_eizac_snow_day_katalina_bday.jpg" style="width: 65%">
+        <div class="text" style="color: yellow">Eizac enjoying himself!</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 of 5</div>
+        <img src="assets\images\2019_bea_snow_day_katalina_bday.jpg" style="width: 65%">
+        <div class="text" style="color: yellow">Bea too!</div>
+    </div>
+
+</div>
+
+<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+<a class="next" onClick="plusSlides(1)">&#10095;</a>
+
+<div style="text-align: center">
+    <span class="dot" onClick="currentSlide(1)"></span>
+    <span class="dot" onClick="currentSlide(2)"></span>
+    <span class="dot" onClick="currentSlide(3)"></span>
+    <span class="dot" onClick="currentSlide(4)"></span>
+    <span class="dot" onClick="currentSlide(5)"></span>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) { 
+            // for loop thru the slides
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+
+</html>

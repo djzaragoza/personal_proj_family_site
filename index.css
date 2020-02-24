@@ -116,7 +116,7 @@ body {
 
 img {
     border-radius: 12%;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-bottom: 5px;
     margin-left: 70px;   
 }
@@ -160,6 +160,7 @@ a:hover {
     color: darkgrey;
     text-align: center; 
     font-family: 'Acme', sans-serif; 
+    margin-top: 20px;
 }
 
 .quote-content {
