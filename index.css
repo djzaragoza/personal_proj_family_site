@@ -74,10 +74,14 @@ body {
 }
 
 .top-header {
+    background-image: url(https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-0/p206x206/20294104_10213550386898294_4770644763543608635_n.jpg?_nc_cat=108&_nc_ohc=RpbKNTbW2noAX-BnYWN&_nc_ht=scontent-sea1-1.xx&_nc_tp=6&oh=a884bfed6f18381e7c076e6d3d116267&oe=5EB92555);
+    background-repeat: no-repeat;
+    background-size: 15% 40%;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     width: 100%;
-
+    margin-left: 20px;
 }
 
 .top-nav {
@@ -287,8 +291,24 @@ a:hover {
     left: 0;
 }
 
+.left h2 {
+    font-size: 16px;
+}
+
+.left p {
+    font-size: 12px;
+}
+
 .right {
     left: 50%;
+}
+
+.right h2 {
+    font-size: 16px;
+}
+
+.right p {
+    font-size: 12px;
 }
 
 .left::before {
