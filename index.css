@@ -78,10 +78,12 @@ body {
     background-repeat: no-repeat;
     background-size:15% 40%;
     background-attachment: fixed;
+    background-position: right top;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-left: 20px;
+    margin-left: -20px;
+    margin-top: 20px;
 }
 
 .top-nav {
@@ -93,7 +95,7 @@ body {
     font-size: 85px;
     text-align: center;
     font-weight: 600;
-    color: rgb(84, 228, 84);  
+    color: rgb(224, 213, 56);  
     margin-top: 5px;
     margin-left: 50px;
     font-family: 'Indie Flower', cursive;
