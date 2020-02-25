@@ -74,9 +74,9 @@ body {
 }
 
 .top-header {
-    background-image: url(https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-0/p206x206/20294104_10213550386898294_4770644763543608635_n.jpg?_nc_cat=108&_nc_ohc=RpbKNTbW2noAX-BnYWN&_nc_ht=scontent-sea1-1.xx&_nc_tp=6&oh=a884bfed6f18381e7c076e6d3d116267&oe=5EB92555);
+    background-image: url(https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/20294104_10213550386898294_4770644763543608635_n.jpg?_nc_cat=108&_nc_ohc=RpbKNTbW2noAX-BnYWN&_nc_ht=scontent-sea1-1.xx&oh=426b312e1d68288a574a475e74dcf136&oe=5EB694E7);
     background-repeat: no-repeat;
-    background-size: 15% 40%;
+    background-size:15% 40%;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
